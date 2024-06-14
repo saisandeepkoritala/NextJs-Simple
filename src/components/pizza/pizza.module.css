@@ -1,0 +1,73 @@
+    /* Container styles */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    /* Pizza card styles */
+    .pizzaCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        width: 300px; 
+        box-shadow: 0 4px 8px rgba(141, 131, 131, 0.1);
+        transition: transform 0.2s ease;
+        min-height: 50vh;
+    }
+    
+    .pizzaCard img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        min-height: 250px;
+        min-width: 300px;
+    }
+    
+    .pizzaCard h2 {
+        font-size: 1.5em;
+        margin:auto;
+        color: #eef66e
+
+    }
+    
+    .pizzaCard h3 {
+        font-size: 1.2em;
+        margin: 5px 0;
+        color: #eef66e
+    }
+    
+    .pizzaCard h4 {
+        font-size: 0.75em;
+        margin: 5px 0;
+        color: #777;
+    }
+    
+    /* Hover effect for large screens */
+    @media (min-width: 768px) {
+        .pizzaCard:hover {
+        transform: scale(1.05);
+        }
+    }
+    
+    /* Responsive styles for small screens */
+    @media (max-width: 767px) {
+        .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        }
+    
+        .pizzaCard {
+        width: 90%; /* Full width minus some margin */
+        padding: 15px;
+        }
+    }
+    
