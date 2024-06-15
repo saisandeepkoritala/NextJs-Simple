@@ -8,7 +8,6 @@ const GetAllPizza = () => {
             <div className={styles.pizzaCard} key={`${pizza.id}${pizza.name}`}>
                 <img src={pizza.img} alt={pizza.name} width={200}/>
                 <h2>{pizza.name}</h2>
-                <h3>Value for Money: {pizza.price}</h3>
                 <h4>{pizza.description}</h4>
             </div>
         );
